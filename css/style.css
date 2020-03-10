@@ -1,0 +1,234 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	color: #111;
+}
+.wrap {
+	height: 480px;
+	width: 665px;
+	display: flex;
+}
+.blu {
+	position: relative;
+	height: 480px;
+	width: 136px;
+	background: #5A61ED;
+}
+.vertical_text {
+	color: #fff;
+	transform: rotate(-90deg);
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    white-space: nowrap;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 49px;
+    letter-spacing: 0.5px;
+}
+.form-wrap {
+	width: 528px;
+	position: relative;
+	overflow: hidden;
+    padding: 38px 20px 0 22px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+}
+.form-wrap:after {
+ 	content: "";
+ 	position: absolute;
+    bottom: -57px;
+    right: -105px;
+ 	background: url(../img/img.svg) no-repeat;
+ 	width: 411px;
+ 	height: 411px;
+ 	z-index: -3;
+ } 
+.title {
+	font-weight: 500;
+	font-size: 22px;
+}
+.subtitle {
+	font-size: 14px;
+    margin-bottom: 20px;
+}
+.form {
+	padding: 0 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form_group {
+	display: flex;
+	flex-wrap: wrap;
+	width: 235px;
+	position: relative;
+    margin-bottom: 16px;
+}
+.form_label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+	color: #7C7C7C;
+	width: 100%;
+}
+.form_input {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #C4C4C4;
+	outline: none;
+	transition: 0.3s;
+    padding: 6px 0 5px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.form_group select { 
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #C4C4C4;
+	outline: none;
+	font-size: 14px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	display: none;
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	padding: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	content: '';
+	position: absolute;
+	display: block;
+    top: 40%;
+	right: 0;
+    height: 6px;
+    width: 13px;
+	background: url(../img/arrow.svg) no-repeat;
+}
+.select2-container--default .select2-selection--single {
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #C4C4C4;
+	outline: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+	font-size: 14px;
+	color: #7C7C7C;
+}
+.form_date {
+	display: flex;
+	flex-wrap: wrap;
+}
+.form_days {
+	width: 56px;
+	margin-right: 9px;
+}
+.form_month {
+	width: 91px;
+	margin-right: 9px;
+}
+.form_years {
+	width: 68px;
+}
+.radio_flex {
+	display: flex;
+}
+.radio_input {
+	display: none;
+	position: absolute;
+}
+.radio_label {
+	display: flex;
+    margin-right: 20px;
+	color: #111;
+	cursor: pointer;
+	position: relative;
+}
+.radio_icon {
+	content: '';
+	height: 12px;
+	width: 12px;
+	background: #fff;
+	border: 1px solid #5A61ED;
+	border-radius: 50%;
+	margin-right: 10px;
+	z-index: 1;
+    margin: 1px 4px 0 0;
+	position: relative;
+}
+.radio_icon:before {
+	content: '';
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	background: #5A61ED;
+	border-radius: 50%;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+.radio_name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.radio_input:checked + .radio_label .radio_icon {
+	border-color: #5A61ED;
+}
+.radio_input:checked + .radio_label .radio_icon:before {
+	opacity: 1;
+}
+.acc_wrap {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 80px 0 0 0;
+}
+.account {
+	font-size: 13px;
+}
+.account a {
+	color: #5A61ED;
+	padding-left: 4px;
+}
+.form_btn {
+	background: #5A61ED;
+	border: 0.5px solid #FFFFFF;
+	padding: 9px 25px 8px 25px;
+	color: #fff;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: -0.8px;
+}
+
+/* Registered page 2 */
+.wrap_reg {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.wrap_registr {
+	width: 100%;
+	padding-left: 100px;
+}
+.wrap_registr .title {
+	font-size: 40px;
+}
+.wrap_registr .subtitle {
+	margin-bottom: 0;
+}

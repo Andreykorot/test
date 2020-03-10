@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TZ</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="blu">
+			<div class="vertical_text">Sign up</div>
+		</div>
+	<div class="form-wrap">
+		<div class="title">New user? </div>
+		<div class="subtitle">Use the form below to create your account.</div>
+		<form class="form">
+			<div class="form_group">
+				<label class="form_label">First Name</label>
+				<input class="form_input" placeholder=" ">
+			</div>
+			<div class="form_group">
+				<label class="form_label">Last Name</label>
+				<input class="form_input" placeholder=" ">
+			</div>
+			<div class="form_group">
+			<label class="form_label">Nationality</label>
+			<select>
+				<option value="usa">American</option>
+				<option value="ru">Russian</option>
+				<option value="by">Belarus</option>
+			</select>
+			</div>
+			<div class="form_group">
+				<label class="form_label">E-mail</label>
+				<input class="form_input" placeholder=" ">
+			</div>
+			<div class="form_group">
+			<div class="form_date">
+			<label class="form_label">Date of Birth</label>
+				<div class="form_days">
+					<select>
+						<option value="day1">1</option>
+						<option value="day2">2</option>
+						<option value="day3">3</option>
+					</select>
+				</div>
+				<div class="form_month">
+					<select>
+						<option value="month1">December</option>
+						<option value="month2">January</option>
+						<option value="month3">February</option>
+					</select>
+				</div>
+				<div class="form_years">
+					<select>
+						<option value="years1">2018</option>
+						<option value="years2">2019</option>
+						<option value="years3">2020</option>
+					</select>
+				</div>
+			</div>
+			</div>
+			<div class="form_group">
+			    <label class="form_label">Gender</label>
+				<div class="radio_flex">
+					<div class="radio">
+						<input class="radio_input" name="male" type="radio" id="radio_1">
+						<label class="radio_label" for="radio_1">
+							<span class="radio_icon"></span>
+							<span class="radio_name">Male</span>
+						</label>
+					</div>
+					<div class="radio">
+						<input class="radio_input" name="male" type="radio" id="radio_2">
+						<label class="radio_label" for="radio_2">
+							<span class="radio_icon"></span>
+							<span class="radio_name">Female</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form_group">
+				<label class="form_label">Password</label>
+				<input type="password" name="password" class="form_input" placeholder=" " required="">
+			</div>
+			<div class="form_group">
+				<label class="form_label">Confirm Password</label>
+				<input type="password" name="password" class="form_input" placeholder=" ">
+			</div>
+			<div class="acc_wrap">
+				<div class="account">
+					Have an account? <a href="#">Login</a>
+				</div>
+			<input class="form_btn" type="submit" value="Complete Signup">
+			</div>
+		</form>
+	</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("select").select2({
+			minimumResultsForSearch: -1
+		});
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@media (max-width: 650px) {
+	.blu {
+		display: none;
+	}
+}
+@media (max-width: 528px) {
+	.wrap {
+		height: auto;
+		width: 100%;
+	}
+	.form_group {
+		width: 100%;
+	}
+}
+@media (max-width: 387px) {
+	.acc_wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.account {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+}
